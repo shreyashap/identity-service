@@ -1,10 +1,14 @@
 import express from 'express';
 import { envData } from './config/dotenv';
 
+import identifyRoutes from './routes/identify.route.js';
+
 const app = express();
 const PORT = envData.PORT;
 
 app.use(express.json());
+
+app.use('/', identifyRoutes);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
