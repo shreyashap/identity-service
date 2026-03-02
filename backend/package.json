@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "npx prisma generate && npx tsc",
+    "start": "node dist/src/index.js",
+    "postinstall": "npx prisma generate"
   },
   "keywords": [],
   "author": "",
