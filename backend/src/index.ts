@@ -1,5 +1,5 @@
 import express from 'express';
-import { envData } from './config/dotenv';
+import { envData } from './config/dotenv.js';
 
 import identifyRoutes from './routes/identify.route.js';
 
