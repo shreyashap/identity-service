@@ -1,5 +1,5 @@
 import { prisma } from '../config/prisma.js';
-import { Contact } from '../../generated/prisma/client';
+import { Contact } from '../../generated/prisma/client.js';
 
 export const findByEmail = async (email: string): Promise<Contact[]> => {
   return prisma.contact.findMany({

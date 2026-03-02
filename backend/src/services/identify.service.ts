@@ -1,5 +1,5 @@
 import * as contactRepository from '../repositories/contact.repository.js';
-import { Contact } from '../../generated/prisma/client';
+import { Contact } from '../../generated/prisma/client.js';
 
 export interface IdentifyResponse {
     contact: {
